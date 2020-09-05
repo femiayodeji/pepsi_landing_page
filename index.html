@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pepsi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="sec">
+		<header>
+			<a href="#"><img src="pepsi_logo.png" class="logo"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">What's New</a></li>
+				<li><a href="#">Newsletters</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="content">
+			<div class="textBox">
+				<h2>That's What<br><span>I like</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing alit, sed do eiusmod tempor incididunt ut labore et dolore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#">View All Products</a>
+			</div>
+			<div class="imgBox">
+				<img src="pepsi_blue.png" class="pepsi"/>
+			</div>
+		</div>
+
+		<ul class="thumb">
+			<li><img src="pepsi_blue.png" onclick="imgSlider('pepsi_blue.png');changeBgColor('#0062be')"></li>
+			<li><img src="pepsi_gray.png" onclick="imgSlider('pepsi_gray.png');changeBgColor('#e60c2c')"></li>
+			<li><img src="pepsi_black.png" onclick="imgSlider('pepsi_black.png');changeBgColor('#1e1e1e')"></li>
+		</ul>
+
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png"></a></li>
+			<li><a href="#"><img src="twitter.png"></a></li>
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.pepsi').src = anything;
+		}
+
+		function changeBgColor(color){
+			const sec = document.querySelector('.sec');
+			sec.style.background = color;
+		}
+	</script>
+</body>
+</html>
