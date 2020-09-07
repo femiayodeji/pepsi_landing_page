@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Pepsi</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<section class="sec">
 		<header>
-			<a href="#"><img src="pepsi_logo.png" class="logo"></a>
+			<a href="#"><img src="img/pepsi_logo.png" class="logo"></a>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Products</a></li>
@@ -19,32 +19,32 @@
 		</header>
 
 		<div class="content">
-			<div class="textBox">
+			<div class="text-box">
 				<h2>That's What<br><span>I like</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing alit, sed do eiusmod tempor incididunt ut labore et dolore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<a href="#">View All Products</a>
+				<a href="#" class="btn">View All Products</a>
 			</div>
-			<div class="imgBox">
-				<img src="pepsi_blue.png" class="pepsi"/>
+			<div class="img-box">
+				<img src="img/pepsi_blue.png" class="pepsi_can"/>
 			</div>
 		</div>
 
-		<ul class="thumb">
-			<li><img src="pepsi_blue.png" onclick="imgSlider('pepsi_blue.png');changeBgColor('#0062be')"></li>
-			<li><img src="pepsi_gray.png" onclick="imgSlider('pepsi_gray.png');changeBgColor('#e60c2c')"></li>
-			<li><img src="pepsi_black.png" onclick="imgSlider('pepsi_black.png');changeBgColor('#1e1e1e')"></li>
+		<ul class="pepsi_can_selector">
+			<li><img src="img/pepsi_blue.png" onclick="imgSlider('img/pepsi_blue.png');changeBgColor('#0062be')"></li>
+			<li><img src="img/pepsi_gray.png" onclick="imgSlider('img/pepsi_gray.png');changeBgColor('#e60c2c')"></li>
+			<li><img src="img/pepsi_black.png" onclick="imgSlider('img/pepsi_black.png');changeBgColor('#1e1e1e')"></li>
 		</ul>
 
-		<ul class="sci">
-			<li><a href="#"><img src="facebook.png"></a></li>
-			<li><a href="#"><img src="twitter.png"></a></li>
-			<li><a href="#"><img src="instagram.png"></a></li>
+		<ul class="subscribe">
+			<li><a href="#"><img src="img/facebook.png"></a></li>
+			<li><a href="#"><img src="img/twitter.png"></a></li>
+			<li><a href="#"><img src="img/instagram.png"></a></li>
 		</ul>
 	</section>
 
 	<script type="text/javascript">
 		function imgSlider(anything){
-			document.querySelector('.pepsi').src = anything;
+			document.querySelector('.pepsi_can').src = anything;
 		}
 
 		function changeBgColor(color){
